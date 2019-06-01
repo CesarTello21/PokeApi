@@ -1,0 +1,25 @@
+.cuadrotitulo {
+	background-color: #424242;
+	height: 80px;
+
+}
+
+.titulo	{
+	color: #fff;
+	font-family: 'Rammetto One', cursive;
+	font-size: 25px;
+}
+
+.altoTotal {
+	height: 100%;
+}
+.centrado {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.pokeInfo /*01000011 11000011 10101001 01110011 01100001 01110010*/{
+	border: 2px solid #424242;
+	box-shadow: 2px 2px 6px gray;
+	height: 350px;
+} 

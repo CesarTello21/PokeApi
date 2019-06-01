@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="Pokemon">
+	<head>
+		<script src="lib/jquery.js"></script>
+		<meta charset="utf-8">
+		<title>Pokedex</title>
+		<link href="https://fonts.googleapis.com/css?family=Rammetto+One&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="lib/boo/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body ng-controller="PokemonCtrl">
+
+		<div class="container-fluid cuadrotitulo">
+			<div class="row altoTotal">
+				<div class="col-md-12 altoTotal centrado">
+					<span class="titulo">Pokédex</span>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3" ng-repeat="x in listado">
+					<div class="pokeInfo">
+						<div>
+							<img src="{{x.data.sprites.front_default}}">
+						</div>
+						<div>{{x.data.name}}</div>
+					</div>
+					<!--01000011 11000011 10101001 01110011 01100001 01110010-->
+				</div>
+			</div>
+		</div>
+
+		<script src="lib/angular.js"></script>
+		<script src="lib/boo/dist/js/bootstrap.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>	
